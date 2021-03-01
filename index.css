@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.progress{
+    width: 200px;
+    height: 5px;
+    background-color: rgb(83, 83, 83);
+    border-radius: 10px;
+}
+.progressDone{
+    width: 0px;
+    height: 5px;
+    background-color: rgb(0, 110, 255);
+    border-radius: 10px;
+    transition: ease;
+}
+
+
+.mainCont {
+   height: 640px;
+   width: 320px;
+   background-color: rgba(37,35,48,255);
+   border-radius:10px;
+   /* background-image: url("doom.jpeg"); */
+   background-size: 700px;
+   background-position: center;
+   
+}
+
+.blur {
+  backdrop-filter: blur(20px);
+  background-color: rgba(22, 22, 22, 0.911);
+  width: 100%;
+  height: 100%;
+  border-radius:10px;
+}
+
+.albumCoverCont {
+  height: 50%;
+  width: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.albumCover{
+  width: 290px;
+  height: 290px;
+  overflow: hidden;
+  object-fit: contain;
+  border-radius:5px;
+}
+
+#albumCover {
+  width: 100%;
+  height: auto;
+}
+
+
+.songInfoCont {
+  height: 50%;
+  width: 320px;
+  display: flex;
+  justify-content: center;
+}
+
+.songInfo{
+  width: 290px;
+  height: auto;
+}
+
+.songName{
+  color:white;
+  font-size: 20px;
+  margin:10px 0 5px 0;
+}
+
+.artist{
+  color: #c5c9ca;
+  font-size: 15px;
+}
+
+
+.progressI{
+  width: 290px;
+  height: 3px;
+  background-color: rgb(83, 83, 83);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  margin:5px 0;
+}
+
+
+.progressDoneI{
+  width: 0px;
+  height: 3px;
+  background-color: rgba(249,249,251,255);
+  border-radius: 10px;
+  transition: ease;
+}
+
+.progressCont{
+  margin:30px 0;
+}
+
+.duration {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #c5c9ca;
+  font-size:12px;
+}
+
+.button{
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+  border:none;
+  cursor: pointer;
+}
+
+.playPauseCont{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pause{
+  margin:0 30px;
+}
+
+.volumeCont{
+  margin:20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.volume {
+  height: 3px;
+  width: 180px;
+  border-radius: 10px;
+}
+
+
+input[type=range]{
+  -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  height: .1em;
+  background: white;
+  border: none;
+  border-radius: 3px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: .8em;
+  width: .8em;
+  border-radius: 50%;
+  background: white;
+  margin-top: -4.5px;
+  cursor: pointer;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+.upNextCont{
+  background-color: rgba(44, 44, 44, 0.52);
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  
+}
+
+.upNextAlbum {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#upNextAlbumCover{
+ width: 45px;
+ height: 45px;
+ border-radius: 5px;
+ margin: 0 0 0 3px;
+}
+
+.upNext {
+  display: flex;
+  width: 90%;
+}
+
+.upNextText{
+ margin:5px 0 0 10px;
+ width: 100%;
+ height: 40px;
+ overflow: hidden;
+}
+
+.nextTitle {
+  font-size:13px;
+  color:#c5c9ca;
+}
+
+.nextSongUp{
+  color: white;
+  font-size:15px;
+
+}
+
